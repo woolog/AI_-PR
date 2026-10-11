@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & 메타데이터 -->
+  <title>[이름] — Practical Explorer (실용적인 탐색가)</title>
+  <meta name="description" content="궁금한 것을 탐색하고, 더 나은 선택을 만듭니다. 다양한 관심사를 탐색하고 직접 알아보고 비교하며 경험을 기록하는 실용적인 탐색가의 퍼스널 브랜드 웹사이트입니다.">
+  <meta name="keywords" content="실용적인 탐색가, Practical Explorer, 퍼스널 브랜딩, 탐색 기록, 나만의 관점, 비교와 판단">
+  <meta name="author" content="[이름]">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[이름] — Practical Explorer (실용적인 탐색가)">
+  <meta property="og:description" content="궁금한 것을 탐색하고, 더 나은 선택을 만듭니다.">
+  <meta property="og:image" content="assets/images/hero_exploration.jpg">
+
+  <!-- 타이포그래피 (웹폰트 + 든든한 로컬 폴백) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       Section 01. Header
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- 브랜드 로고 -->
+        <a href="#hero" class="brand-logo" aria-label="메인 페이지로 이동">
+          <span class="brand-badge" id="header-brand-name">[이름]</span>
+          <span class="brand-sub">Practical Explorer</span>
+        </a>
+
+        <!-- 네비게이션 메뉴 -->
+        <nav aria-label="메인 메뉴">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">소개</a></li>
+            <li><a href="#interests" class="nav-link">관심사</a></li>
+            <li><a href="#journal" class="nav-link">탐색 기록</a></li>
+            <li><a href="#philosophy" class="nav-link">철학</a></li>
+            <li><a href="#contact" class="nav-link">연락하기</a></li>
+          </ul>
+        </nav>
+
+        <!-- 우측 액션 & 개인화 버튼 -->
+        <div class="header-actions">
+          <button type="button" class="btn-customizer-toggle" id="btn-open-customizer" title="이름 및 연락처를 내 정보로 커스텀할 수 있습니다.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+            <span>내 정보 설정</span>
+          </button>
+
+          <!-- 모바일 햄버거 메뉴 버튼 -->
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         Section 02. Hero
+         ==================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- 헤드라인 & 소개 & CTA -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="hero-tag">PERSONAL BRAND / PRACTICAL EXPLORER</span>
+            </div>
+            
+            <h1 class="hero-title">
+              궁금한 것을 탐색하고,<br>
+              <span class="accent">더 나은 선택</span>을 만듭니다.
+            </h1>
+
+            <p class="hero-lead">
+              일상에서 발견한 질문부터 새로운 경험과 지식까지.<br>
+              직접 알아보고, 비교하고, 경험하며 나만의 관점을 만들어 갑니다.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#about" class="btn-primary">
+                나에 대해 알아보기
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#journal" class="btn-secondary">
+                탐색 기록 살펴보기
+              </a>
+            </div>
+          </div>
+
+          <!-- 에디토리얼 탐색 비주얼 -->
+          <div class="hero-visual-card">
+            <div class="hero-img-container">
+              <img src="assets/images/hero_exploration.jpg" alt="산토리니의 테라스: 눈부신 에게해 바다와 푸른 돔 지붕, 탐색가의 스케치 노트와 나침반" loading="eager">
+            </div>
+            <div class="hero-caption">
+              <span class="hero-caption-text">Santorini Notes, Maps &amp; Aegean Observations</span>
+              <span class="hero-caption-badge">EXPLORATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Section 03. About Me
+         ==================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About the Way</span>
+          <h2 class="section-title">저는 이런 방식으로 세상을 탐색합니다.</h2>
+        </div>
+
+        <div class="about-intro-box">
+          <div class="about-intro-text">
+            <p>
+              저는 궁금한 것이 생기면 직접 알아보고, 여러 선택지를 비교하고, 현실적으로 판단하는 과정을 좋아합니다.
+            </p>
+            <p>
+              단순히 정보를 모으는 데 그치지 않고, 그것이 실제 생활에서 어떤 의미가 있는지 생각합니다.
+              새로운 것을 배우고 경험하면서 조금씩 나만의 기준을 만들어 가는 것. 그것이 제가 세상을 탐색하는 방식입니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4대 탐색 프레임워크 그리드 -->
+        <div class="framework-grid" id="framework-container">
+          <!-- JavaScript(renderFramework)에서 동적 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Section 04. Interests
+         ==================================================================== -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Areas of Curiosity</span>
+          <h2 class="section-title">관심사는 하나로 정해져 있지 않습니다.</h2>
+          <p class="section-desc">서로 다른 분야를 탐색하면서 새로운 관점과 가능성을 발견합니다.</p>
+        </div>
+
+        <!-- 4대 카테고리 그리드 -->
+        <div class="interests-grid" id="categories-container">
+          <!-- JavaScript(renderCategories)에서 동적 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Section 05. Exploration Journal
+         ==================================================================== -->
+    <section class="section journal-section" id="journal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Journal &amp; Insights</span>
+          <h2 class="section-title">탐색하고, 비교하고, 기록합니다.</h2>
+          <p class="section-desc">궁금한 질문에서 시작해 알아본 과정과 생각을 기록합니다.</p>
+        </div>
+
+        <!-- 필터 탭 -->
+        <div class="journal-controls">
+          <div class="filter-tabs">
+            <button type="button" class="filter-tab active" data-filter="all">전체보기</button>
+            <button type="button" class="filter-tab" data-filter="choices">실용적 선택</button>
+            <button type="button" class="filter-tab" data-filter="travel">여행과 경험</button>
+            <button type="button" class="filter-tab" data-filter="learning">지식과 사유</button>
+            <button type="button" class="filter-tab" data-filter="everyday">일상 속 발견</button>
+          </div>
+          <div class="journal-count" id="journal-total-count">3개의 기록</div>
+        </div>
+
+        <!-- 저널 카드 그리드 -->
+        <div class="journal-grid" id="journal-grid">
+          <!-- JavaScript(renderJournals)에서 동적 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Section 06. Personal Philosophy (Dark Section)
+         ==================================================================== -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-inner">
+          <span class="philosophy-label">Core Philosophy</span>
+          <blockquote class="philosophy-quote">모든 것을 알 필요는 없습니다.
+다만, 궁금한 것을 알아보려는 태도는 중요합니다.</blockquote>
+          <p class="philosophy-sub">계속 탐색하고, 직접 경험하고, 더 나은 질문을 찾아갑니다.</p>
+
+          <div class="philosophy-principles">
+            <div class="principle-item">
+              <span class="principle-num">01</span>
+              <p class="principle-text">정답을 단언하기보다 더 나은 질문을 찾습니다.</p>
+            </div>
+            <div class="principle-item">
+              <span class="principle-num">02</span>
+              <p class="principle-text">막연한 기대보다 현실적인 조건을 먼저 확인합니다.</p>
+            </div>
+            <div class="principle-item">
+              <span class="principle-num">03</span>
+              <p class="principle-text">작은 실천과 기록이 모여 고유한 관점이 됩니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Section 07. Contact
+         ==================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Connect</span>
+          <h2 class="section-title">새로운 질문과 관점은 언제나 환영합니다.</h2>
+          <p class="section-desc">흥미로운 생각이나 함께 나누고 싶은 이야기가 있다면 편하게 연락해 주세요.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- 연락처 정보 카드 -->
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-item-label">이메일 연락처</div>
+              <div class="contact-email-box">
+                <span class="contact-email-val" id="contact-email-val">아직 등록된 이메일이 없습니다</span>
+                <button type="button" class="btn-copy" id="btn-copy-email">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>복사</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-label">소셜 및 채널</div>
+              <div class="social-links" id="social-links-list">
+                <!-- JavaScript에서 동적 바인딩 -->
+              </div>
+            </div>
+
+            <div class="contact-item" style="border-top: 1px solid var(--color-border-subtle); padding-top: 24px;">
+              <div class="contact-item-label">브랜드 원칙 안내</div>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6;">
+                과장된 자기소개 대신 진정성 있는 탐색의 기록을 공유합니다. 협업 문의나 관점 공유는 언제든 열려 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 메시지 보내기 폼 -->
+          <div class="contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-sender-name" class="form-label">보내는 분 성함 또는 닉네임</label>
+                <input type="text" id="form-sender-name" class="form-input" placeholder="성함이나 닉네임을 적어주세요" required>
+              </div>
+              <div class="form-group">
+                <label for="form-sender-message" class="form-label">나누고 싶은 이야기나 질문</label>
+                <textarea id="form-sender-message" class="form-textarea" placeholder="어떤 주제나 질문도 좋습니다. 편하게 남겨주세요." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                메시지 보내기
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       Section 08. Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span id="footer-brand-name">[이름]</span>
+          <span>Practical Explorer</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#about">소개</a></li>
+          <li><a href="#interests">관심사</a></li>
+          <li><a href="#journal">탐색 기록</a></li>
+          <li><a href="#philosophy">철학</a></li>
+          <li><a href="#contact">연락하기</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <p class="footer-copy">
+            &copy; <span id="footer-current-year">2026</span> Practical Explorer. All rights reserved.
+          </p>
+          <button type="button" class="btn-top" id="btn-back-to-top" aria-label="맨 위로 이동" title="맨 위로 이동">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       Modal 1: Journal Reader Modal (상세 아티클 뷰어)
+       ====================================================================== -->
+  <div class="modal-overlay" id="journal-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-article-title">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn" id="btn-close-journal-modal" aria-label="닫기">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="journal-modal-category" id="modal-article-category">카테고리</span>
+      <h2 class="journal-modal-title" id="modal-article-title">기록 제목</h2>
+      <div class="journal-modal-meta" id="modal-article-meta"></div>
+
+      <div class="journal-modal-body" id="modal-article-body">
+        <!-- 본문 내용 동적 렌더링 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Modal 2: Personalization (내 정보 설정) Modal
+       ====================================================================== -->
+  <div class="modal-overlay" id="customizer-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="customizer-modal-title">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn" id="btn-close-customizer-modal" aria-label="닫기">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h2 class="section-title" id="customizer-modal-title" style="font-size: 1.5rem; margin-bottom: 8px;">내 브랜드 정보 설정</h2>
+      <p class="customizer-intro">
+        이름과 연락처를 입력하면 사이트 전체에 즉시 반영되며, 브라우저 로컬 저장소(LocalStorage)에 안전하게 저장되어 다음 방문 시에도 유지됩니다.
+      </p>
+
+      <div class="form-group">
+        <label for="custom-input-name" class="form-label">이름 (사이트 로고 및 푸터에 표시)</label>
+        <input type="text" id="custom-input-name" class="form-input" placeholder="예: 홍길동">
+      </div>
+
+      <div class="form-group">
+        <label for="custom-input-email" class="form-label">이메일 주소</label>
+        <input type="email" id="custom-input-email" class="form-input" placeholder="예: your.email@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="custom-input-github" class="form-label">GitHub URL (선택 사항)</label>
+        <input type="url" id="custom-input-github" class="form-input" placeholder="https://github.com/username">
+      </div>
+
+      <div class="form-group">
+        <label for="custom-input-blog" class="form-label">블로그 / 개인 웹사이트 URL (선택 사항)</label>
+        <input type="url" id="custom-input-blog" class="form-input" placeholder="https://velog.io/@username">
+      </div>
+
+      <div class="form-group">
+        <label for="custom-input-linkedin" class="form-label">LinkedIn URL (선택 사항)</label>
+        <input type="url" id="custom-input-linkedin" class="form-input" placeholder="https://linkedin.com/in/username">
+      </div>
+
+      <div class="customizer-actions">
+        <button type="button" class="btn-secondary" id="btn-reset-customizer" style="margin-right: auto; color: #a13d3d; border-color: #f1cfcf;">
+          기본값 복원
+        </button>
+        <button type="button" class="btn-secondary" id="btn-cancel-customizer">
+          취소
+        </button>
+        <button type="button" class="btn-primary" id="btn-save-customizer">
+          저장하기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 로드 (file:// 실행 환경 완벽 호환) -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
